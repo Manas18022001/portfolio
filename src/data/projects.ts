@@ -20,6 +20,16 @@ export const projects = [
     link: null, 
   },
   {
+    id: "tripmate",
+    title: "TripMate",
+    shortDescription: "Multi-agent AI trip planning system for Indian destinations.",
+    description: "An intelligent, multi-agent trip planning system built to generate personalized, budget-aware itineraries. Engineered using a team of autonomous AI agents that collaborate to research, plan, and optimize travel routes using Retrieval-Augmented Generation (RAG).",
+    impact: "Automates comprehensive end-to-end travel research and itinerary generation using RAG and agentic workflows.",
+    tech: ["LangGraph", "FastAPI", "Streamlit", "Python", "RAG"],
+    featured: true,
+    link: "https://github.com/Manas18022001/tripmate",
+  },
+  {
     id: "weather-explorer",
     title: "Weather Explorer",
     shortDescription: "Interactive weather visualization application.",
