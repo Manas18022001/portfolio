@@ -11,7 +11,8 @@ export const personal = {
   highlights: [
     "Founding Engineer Experience: Led a team of three in a fast-paced environment with full end-to-end product ownership and led hiring for the tech team.",
     "Robust Tech Stack: Expert in Go/Gin, Next.js, Postgres, React, AWS, Grafana, WABA, LangGraph, LangSmith, RAG, and omni-channel notification systems.",
-    "Full Lifecycle Development: Managed everything from backend architecture and deployment to GTM integrations and database design, building productive AI tools to help businesses."
+    "Full Lifecycle Development: Managed everything from backend architecture and deployment to GTM integrations and database design, building productive AI tools to help businesses.",
+    "Engineering & AI Orchestration: Highly adaptable, fast-paced learner who accepts complex tech problems with confidence. Skilled at evaluating engineering trade-offs, orchestrating efficient AI workflows, supervising AI results, and architecting optimal technical systems."
   ],
   stats: [
     { label: "REST APIs", value: 400, plus: true },
