@@ -57,9 +57,31 @@ export default function About() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <ScrollReveal delay={0.2}>
             <div className="prose prose-invert max-w-none">
-              <p className="text-lg text-color-text-secondary leading-relaxed">
+              <p className="text-lg text-color-text-secondary leading-relaxed mb-6">
                 {personal.about}
               </p>
+              {personal.highlights && personal.highlights.length > 0 && (
+                <ul className="space-y-4">
+                  {personal.highlights.map((highlight, index) => {
+                    const [title, ...rest] = highlight.split(': ');
+                    const content = rest.join(': ');
+                    return (
+                      <li key={index} className="flex items-start">
+                        <span className="text-color-accent-blue mr-3 mt-1.5 text-lg">•</span>
+                        <span className="text-color-text-secondary leading-relaxed">
+                          {content ? (
+                            <>
+                              <strong className="text-color-text-primary font-semibold">{title}:</strong> {content}
+                            </>
+                          ) : (
+                            highlight
+                          )}
+                        </span>
+                      </li>
+                    );
+                  })}
+                </ul>
+              )}
             </div>
           </ScrollReveal>
 
